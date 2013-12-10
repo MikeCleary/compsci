@@ -24,7 +24,7 @@ describe BinaryTree do
 
   describe "Searching" do
     before do
-      pending "TODO - remove me and complete the methods..."
+
     end
 
     context "nodes" do
@@ -33,6 +33,9 @@ describe BinaryTree do
       end
 
       it "should find all the nodes" do
+        @nodes.map do |node|
+          puts node.data
+        end
         @nodes.length.should eq(7)
       end
 

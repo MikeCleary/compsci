@@ -4,7 +4,7 @@ describe Fibonacci do
 
   before do
     before = Time.now
-    @numbers = Fibonacci.seq(0, 10)
+    @numbers = Fibonacci.seq(0, 40)
     @recursive = Time.now - before
   end
 
@@ -14,9 +14,8 @@ describe Fibonacci do
 
   describe "the iterative approach" do
     before do
-      pending "TODO... write an iterative method thats faster"
       before = Time.now
-      @numbers = Fibonacci.iterative_seq(0, 10)
+      @numbers = Fibonacci.iterative_seq(0, 40)
       @iterative = Time.now - before
     end
 
@@ -26,6 +25,8 @@ describe Fibonacci do
 
     it "should run faster than a recursive algorithm" do
       (@iterative < @recursive).should be_true
+      puts @recursive
+      puts @iterative
     end
 
   end

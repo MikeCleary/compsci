@@ -22,6 +22,17 @@ class BinaryTree
   end
 
   def nodes(node = self.root)
+    node_array = []
+
+    if node.left
+     node_array += nodes(node.left)
+    end
+    node_array << node
+    if node.right 
+     node_array += nodes(node.right)
+    end
+
+    node_array
   end
 
   def leaf_nodes(node = self.root)
