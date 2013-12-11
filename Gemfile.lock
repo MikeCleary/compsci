@@ -25,6 +25,7 @@ GEM
     rspec-expectations (2.13.0)
       diff-lcs (>= 1.1.3, < 2.0)
     rspec-mocks (2.13.1)
+    ruby-graphviz (1.0.9)
     slop (3.4.5)
 
 PLATFORMS
@@ -35,3 +36,4 @@ DEPENDENCIES
   pry
   pry-byebug
   rspec
+  ruby-graphviz

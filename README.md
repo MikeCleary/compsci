@@ -8,3 +8,4 @@
 * Use Nokogiri to obtain the HTML DOM for the NASDAQ: http://finance.yahoo.com/actives?e=o
 * Convert the relevant part of the page into a binary tree, using the stock price and stock name as the data
 * Write a search function that returns the stocks in order of price
+* Get the Dijkstras test to pass. Add an algorithm that calculates the shortest distances between any two nodes.
