@@ -8,14 +8,14 @@ describe "Sorting Algorithms" do
 
   describe "Insertion Sort" do
     it "should sort it" do
-      pending "Need to implement insertion_sort"
+      # pending "Need to implement insertion_sort"
       expect(@jumbled.insertion_sort).to eq(@sorted)
     end
   end
 
   describe "Quick Sort" do
     it "should sort it" do
-      pending "Need to implement quick_sort"
+      # pending "Need to implement quick_sort"
       expect(@jumbled.quick_sort).to eq(@sorted)
     end
   end

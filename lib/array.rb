@@ -21,8 +21,14 @@ class Array
     sorted
   end
 
-  def quick_sort(list = self)
-
+  def quick_sort(list = self)    
+    if list.length > 1
+      pivot = list.delete_at(list.length/2)
+      right_list, left_list = [], []
+      list.each { |list_item| list_item < pivot ? left_list << list_item : right_list << list_item }
+      quick_sort(left_list)  + [pivot] + quick_sort(right_list)
+    else
+      list
+    end
   end
-
 end

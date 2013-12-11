@@ -9,7 +9,7 @@ Dir[("lib/**/*.rb")].each { |f|
 }
 
 require 'pry'
-require 'pry-debugger'
+require 'pry-byebug'
 
 RSpec.configure do |config|
   config.treat_symbols_as_metadata_keys_with_true_values = true
