@@ -9,6 +9,7 @@ class Vertex
     self.data = data
     self.edges = Hash.new
     self.distance = 1e99
+    self.visited = false
   end
 
   def adjacent?(to_node)

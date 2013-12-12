@@ -66,5 +66,4 @@ describe Graph do
     @iah.distance.should eq(1928)
   end
 
-
 end
